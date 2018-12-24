@@ -35,3 +35,4 @@ for train,test in kfold.split(X,Y):
     cvscores.append(scores[1]*100)
 
 print("%.2f%%" % np.mean(cvscores))
+
