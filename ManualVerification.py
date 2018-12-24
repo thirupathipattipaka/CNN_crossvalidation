@@ -27,4 +27,4 @@ model.add(Dense(1,activation='sigmoid'))
 model.compile(loss='binary_crossentropy',optimizer='adam',metrics=['accuracy'])
 
 #Fit the model
-model.fit(X_train,y_train,validation_split=(X_test,y_test),epochs=150,batch_size=10)
+model.fit(X_train,y_train,validation_data=(X_test,y_test),epochs=150,batch_size=10)
